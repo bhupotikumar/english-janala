@@ -34,11 +34,11 @@ const displayLessons = (words) => {
         const div = document.createElement('div');
         div.innerHTML = `
         <div class="bg-gray-100 border rounded-xl border-gray-200 shadow-lg">
-                    <div class="text-center p-8">
+                    <div class="text-center flex flex-col items-center justify-center gap-4 p-8">
                         <h2 class="text-xl font-bold">${word.word}</h2>
                         <p>${word.meaning}</p>
                         <h2 class="text-2xl font-bold text-bangla">"${word.meaning}" / ${word.pronunciation}</h2>
-                        <div class="flex justify-between mt-4">
+                        <div class="w-full flex justify-between mt-4">
                             <button class="btn !bg-sky-100 hover:!bg-sky-400 transition"><i class="fa-solid fa-circle-info"></i></button>
                             <button class="btn !bg-sky-100 hover:!bg-sky-400 transition"><i class="fa-solid fa-volume-high"></i></button>
                         </div>
